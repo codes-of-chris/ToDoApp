@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,15 +129,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="addToDoButton" destination="Uce-yR-afh" id="m3T-ri-cvO"/>
+                        <outlet property="tableView" destination="yQm-td-3bq" id="Ue2-RI-gPs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.875" y="132.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Todo View Controller-->
         <scene sceneID="TWb-ly-xkG">
             <objects>
-                <viewController id="uBv-JW-Hw5" sceneMemberID="viewController">
+                <viewController id="uBv-JW-Hw5" customClass="AddTodoViewController" customModule="ToDoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDB-3Q-PaA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -309,6 +313,12 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addToDoButton" destination="Rm8-gN-MII" id="ybB-bS-UQG"/>
+                        <outlet property="backButton" destination="0bs-mK-JFb" id="2Wl-6m-7QD"/>
+                        <outlet property="descriptionTextView" destination="9BC-l8-t72" id="Fa8-Z8-Uiz"/>
+                        <outlet property="titleTextView" destination="F6j-5K-MFU" id="KNv-i7-CYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FjE-02-tAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		233EDECF50F4801AE1CFFDCA /* Pods_ToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30EDA1C06DBB59C5B04F99F /* Pods_ToDoApp.framework */; };
+		83962665223D008700627D2D /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83962661223D008700627D2D /* AddTodoViewController.swift */; };
+		83962666223D008700627D2D /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83962662223D008700627D2D /* LandingViewController.swift */; };
+		8396266E223D019D00627D2D /* Realm_SafeWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83962669223D019D00627D2D /* Realm_SafeWrite.swift */; };
+		8396266F223D019D00627D2D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396266A223D019D00627D2D /* ToDo.swift */; };
+		83962670223D019D00627D2D /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396266D223D019D00627D2D /* ToDoCell.swift */; };
+		83962673223D029300627D2D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83962672223D029300627D2D /* ViewModel.swift */; };
+		83962675223D465800627D2D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83962674223D465800627D2D /* R.generated.swift */; };
 		83FB6BFB223CF80500D7CD7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FB6BFA223CF80500D7CD7A /* AppDelegate.swift */; };
-		83FB6BFD223CF80500D7CD7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FB6BFC223CF80500D7CD7A /* ViewController.swift */; };
 		83FB6C00223CF80500D7CD7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB6BFE223CF80500D7CD7A /* Main.storyboard */; };
 		83FB6C02223CF80700D7CD7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FB6C01223CF80700D7CD7A /* Assets.xcassets */; };
 		83FB6C05223CF80700D7CD7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB6C03223CF80700D7CD7A /* LaunchScreen.storyboard */; };
@@ -18,9 +24,15 @@
 /* Begin PBXFileReference section */
 		0A764932FB31D9E8F22B7FE4 /* Pods-ToDoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoApp/Pods-ToDoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		454DE6055FE94C86DF97F482 /* Pods-ToDoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoApp/Pods-ToDoApp.release.xcconfig"; sourceTree = "<group>"; };
+		83962661223D008700627D2D /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		83962662223D008700627D2D /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		83962669223D019D00627D2D /* Realm_SafeWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm_SafeWrite.swift; sourceTree = "<group>"; };
+		8396266A223D019D00627D2D /* ToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		8396266D223D019D00627D2D /* ToDoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		83962672223D029300627D2D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		83962674223D465800627D2D /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		83FB6BF7223CF80500D7CD7A /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FB6BFA223CF80500D7CD7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83FB6BFC223CF80500D7CD7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83FB6BFF223CF80500D7CD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83FB6C01223CF80700D7CD7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FB6C04223CF80700D7CD7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,9 +60,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83962660223D008700627D2D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83962661223D008700627D2D /* AddTodoViewController.swift */,
+				83962662223D008700627D2D /* LandingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		83962668223D019D00627D2D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				83962669223D019D00627D2D /* Realm_SafeWrite.swift */,
+				8396266A223D019D00627D2D /* ToDo.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8396266B223D019D00627D2D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83962672223D029300627D2D /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8396266C223D019D00627D2D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8396266D223D019D00627D2D /* ToDoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		83962676223D46D900627D2D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				83FB6C03223CF80700D7CD7A /* LaunchScreen.storyboard */,
+				83FB6BFE223CF80500D7CD7A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		83FB6BEE223CF80500D7CD7A = {
 			isa = PBXGroup;
 			children = (
+				83962674223D465800627D2D /* R.generated.swift */,
 				83FB6BF9223CF80500D7CD7A /* ToDoApp */,
 				83FB6BF8223CF80500D7CD7A /* Products */,
 				95D2E180CBF1D846AB362A4E /* Pods */,
@@ -69,11 +125,13 @@
 		83FB6BF9223CF80500D7CD7A /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				83962676223D46D900627D2D /* Storyboards */,
+				83962668223D019D00627D2D /* Classes */,
+				8396266C223D019D00627D2D /* Cells */,
+				8396266B223D019D00627D2D /* ViewModels */,
+				83962660223D008700627D2D /* ViewControllers */,
 				83FB6BFA223CF80500D7CD7A /* AppDelegate.swift */,
-				83FB6BFC223CF80500D7CD7A /* ViewController.swift */,
-				83FB6BFE223CF80500D7CD7A /* Main.storyboard */,
 				83FB6C01223CF80700D7CD7A /* Assets.xcassets */,
-				83FB6C03223CF80700D7CD7A /* LaunchScreen.storyboard */,
 				83FB6C06223CF80700D7CD7A /* Info.plist */,
 			);
 			path = ToDoApp;
@@ -96,6 +154,7 @@
 			buildConfigurationList = 83FB6C09223CF80700D7CD7A /* Build configuration list for PBXNativeTarget "ToDoApp" */;
 			buildPhases = (
 				595A9823EA13B3C096E6CDAE /* [CP] Check Pods Manifest.lock */,
+				83962667223D00C000627D2D /* ShellScript */,
 				83FB6BF3223CF80500D7CD7A /* Sources */,
 				83FB6BF4223CF80500D7CD7A /* Frameworks */,
 				83FB6BF5223CF80500D7CD7A /* Resources */,
@@ -231,6 +290,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		83962667223D00C000627D2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+				"",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -238,8 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83FB6BFD223CF80500D7CD7A /* ViewController.swift in Sources */,
+				83962675223D465800627D2D /* R.generated.swift in Sources */,
+				83962665223D008700627D2D /* AddTodoViewController.swift in Sources */,
+				83962670223D019D00627D2D /* ToDoCell.swift in Sources */,
+				8396266F223D019D00627D2D /* ToDo.swift in Sources */,
+				83962666223D008700627D2D /* LandingViewController.swift in Sources */,
+				8396266E223D019D00627D2D /* Realm_SafeWrite.swift in Sources */,
 				83FB6BFB223CF80500D7CD7A /* AppDelegate.swift in Sources */,
+				83962673223D029300627D2D /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

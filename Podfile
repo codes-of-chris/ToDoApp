@@ -1,6 +1,6 @@
 platform :ios, '12.0'
 
-target 'ToDo' do
+target 'ToDoApp' do
   use_frameworks!
   pod 'RealmSwift', '3.13.1'
   pod 'RxDataSources', '3.1.0'
